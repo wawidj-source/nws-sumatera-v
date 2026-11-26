@@ -462,10 +462,10 @@ export const ComplianceMatrixModule: React.FC = () => {
               DEMO RESMI UNTUK BWS SUMATERA V • DIKEMBANGKAN OLEH FORTUNA ARGATECH
             </div>
             <h2 className="text-lg font-extrabold text-[var(--text-primary)]">
-              Matriks Kepatuhan Spesifikasi (Compliance Matrix) — 27 Butir Teknis &amp; Non-Teknis
+              Matriks Kesesuaian Permintaan KAK (Compliance Matrix) — 27 Butir Teknis &amp; Non-Teknis
             </h2>
             <p className="max-w-3xl text-xs text-[var(--text-secondary)]">
-              Pemetaan transparan antara spesifikasi minimum BWS Sumatera V (Bagian A &amp; Bagian B Item 1–8) terhadap cakupan PRD, implementasi pada Demo Web App oleh <strong className="text-[var(--text-primary)]">Fortuna Argatech</strong>, serta catatan gap teknis menuju tahap produksi.
+              Pemetaan transparan antara spesifikasi permintaan KAK BWS Sumatera V (Bagian A &amp; Bagian B Item 1–8) terhadap cakupan PRD, implementasi pada Demo Web App oleh <strong className="text-[var(--text-primary)]">Fortuna Argatech</strong>, serta catatan gap teknis menuju tahap produksi.
             </p>
           </div>
           <button
@@ -578,7 +578,7 @@ export const ComplianceMatrixModule: React.FC = () => {
 
       {/* Main 27-Item Matrix Table */}
       <ResponsiveTable
-        caption="Matriks Kepatuhan 27 Butir Spesifikasi BWS Sumatera V — Demo oleh Fortuna Argatech"
+        caption="Matriks Kesesuaian Permintaan KAK (27 Butir) BWS Sumatera V — Demo oleh Fortuna Argatech"
         columns={columns}
         rows={filteredItems}
         rowKey={(r) => String(r.no)}

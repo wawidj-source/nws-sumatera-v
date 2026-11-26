@@ -1,6 +1,6 @@
 # SIH3 & EWS BWS Sumatera V — Demo oleh Fortuna Argatech
 
-Demo platform web interaktif dan dokumentasi spesifikasi yang ditujukan untuk **Balai Wilayah Sungai (BWS) Sumatera V (Provinsi Sumatera Barat)**, dikembangkan oleh **Fortuna Argatech**, mencakup pemantauan data sumber daya air (SDA), prakiraan cuaca satelit orbit rendah (LEO + GNSS-RO), nowcasting, peringatan dini banjir (Siaga IV–I), survei badan sungai, respons bencana, aplikasi Android petugas pos (MVP), serta matriks kepatuhan 27 butir spesifikasi.
+Demo platform web interaktif dan dokumentasi spesifikasi yang ditujukan untuk **Balai Wilayah Sungai (BWS) Sumatera V (Provinsi Sumatera Barat)**, dikembangkan oleh **Fortuna Argatech**, mencakup pemantauan data sumber daya air (SDA), prakiraan cuaca satelit orbit rendah (LEO + GNSS-RO), nowcasting, peringatan dini banjir (Siaga IV–I), survei badan sungai, respons bencana, aplikasi Android petugas pos (MVP), serta matriks kesesuaian permintaan KAK (Compliance Matrix) 27 butir.
 
 - **Live Demo (Firebase Hosting):** https://bws-sumatera-v-demo.web.app
 

@@ -44,7 +44,7 @@ const NAV_ITEMS: { id: ModuleId; label: string; short: string; icon: React.Compo
   { id: 'disaster', label: 'Respons & Android MVP', short: 'Bencana', icon: ShieldAlert },
   { id: 'alarms', label: 'Alarm & Gateway WA/SMS', short: 'Alarm/WA', icon: BellRing },
   { id: 'telemetry', label: 'Telemetri, VPN & Server', short: 'Telemetri', icon: Server },
-  { id: 'compliance', label: 'Matriks Kepatuhan (27)', short: 'Kepatuhan', icon: ClipboardCheck },
+  { id: 'compliance', label: 'Kesesuaian KAK (27)', short: 'KAK', icon: ClipboardCheck },
   { id: 'settings', label: 'Pengaturan & RBAC', short: 'Pengaturan', icon: Settings },
 ];
 
