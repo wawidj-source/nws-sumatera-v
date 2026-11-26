@@ -36,6 +36,7 @@ export type ModuleId =
   | 'disaster'
   | 'alarms'
   | 'telemetry'
+  | 'compliance'
   | 'settings';
 
 export type ThemeMode = 'dark' | 'light' | 'system';

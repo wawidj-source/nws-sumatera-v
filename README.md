@@ -1,12 +1,16 @@
-# SIH3 & EWS BWS Sumatera V — Platform Pemantauan Data SDA & Peringatan Dini Banjir
+# SIH3 & EWS BWS Sumatera V — Demo oleh Fortuna Argatech
 
-Platform web interaktif dan dokumentasi spesifikasi untuk **Balai Wilayah Sungai (BWS) Sumatera V (Provinsi Sumatera Barat)** yang mencakup pemantauan data sumber daya air (SDA), prakiraan cuaca satelit orbit rendah (LEO + GNSS-RO), nowcasting, peringatan dini banjir (Siaga IV–I), survei badan sungai, respons bencana, serta simulasi aplikasi Android petugas pos (MVP).
+Demo platform web interaktif dan dokumentasi spesifikasi yang ditujukan untuk **Balai Wilayah Sungai (BWS) Sumatera V (Provinsi Sumatera Barat)**, dikembangkan oleh **Fortuna Argatech**, mencakup pemantauan data sumber daya air (SDA), prakiraan cuaca satelit orbit rendah (LEO + GNSS-RO), nowcasting, peringatan dini banjir (Siaga IV–I), survei badan sungai, respons bencana, aplikasi Android petugas pos (MVP), serta matriks kepatuhan 27 butir spesifikasi.
+
+- **Live Demo (Firebase Hosting):** https://bws-sumatera-v-demo.web.app
 
 ## Dokumen Resmi (`docs/`)
 
 - [PRD-BWS-Sumatera-V.md](docs/PRD-BWS-Sumatera-V.md) — Product Requirements Document lengkap (Markdown)
 - [PRD-BWS-Sumatera-V.pdf](docs/PRD-BWS-Sumatera-V.pdf) — Versi PDF resmi lengkap dengan diagram arsitektur
 - [Audit-Compliance-Report-BWS-Sumatera-V.pdf](docs/Audit-Compliance-Report-BWS-Sumatera-V.pdf) — Laporan Audit Kepatuhan 27 Butir Spesifikasi, Matriks Sudah/Simulasi/Belum, Analisis Kendala & 13 Screenshot Aktual
+- [BOQ-RAB-BWS-Sumatera-V.md](docs/BOQ-RAB-BWS-Sumatera-V.md) / [CSV](docs/BOQ-RAB-BWS-Sumatera-V.csv) / [PDF](docs/BOQ-RAB-BWS-Sumatera-V.pdf) — BOQ & RAB Paket Standar
+- [BOQ-RAB-BWS-Sumatera-V-Under1M.md](docs/BOQ-RAB-BWS-Sumatera-V-Under1M.md) / [CSV](docs/BOQ-RAB-BWS-Sumatera-V-Under1M.csv) / [PDF](docs/BOQ-RAB-BWS-Sumatera-V-Under1M.pdf) — BOQ & RAB Opsi Pagu `< Rp 1 Miliar` (Incl. PPN 11%)
 
 ## Modul yang Tersedia di Demo Web App
 

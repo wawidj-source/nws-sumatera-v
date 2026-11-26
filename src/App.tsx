@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {
   Activity,
   BellRing,
+  ClipboardCheck,
   CloudRainWind,
   Compass,
   Database,
@@ -29,6 +30,7 @@ import { SurveyorModule } from './modules/SurveyorModule';
 import { DisasterFieldModule } from './modules/DisasterFieldModule';
 import { AlarmNotificationModule } from './modules/AlarmNotificationModule';
 import { TelemetryServerModule } from './modules/TelemetryServerModule';
+import { ComplianceMatrixModule } from './modules/ComplianceMatrixModule';
 import { SettingsUsersModule } from './modules/SettingsUsersModule';
 import { VideowallView } from './components/VideowallView';
 import { UserRole } from './types/sda';
@@ -42,6 +44,7 @@ const NAV_ITEMS: { id: ModuleId; label: string; short: string; icon: React.Compo
   { id: 'disaster', label: 'Respons & Android MVP', short: 'Bencana', icon: ShieldAlert },
   { id: 'alarms', label: 'Alarm & Gateway WA/SMS', short: 'Alarm/WA', icon: BellRing },
   { id: 'telemetry', label: 'Telemetri, VPN & Server', short: 'Telemetri', icon: Server },
+  { id: 'compliance', label: 'Matriks Kepatuhan (27)', short: 'Kepatuhan', icon: ClipboardCheck },
   { id: 'settings', label: 'Pengaturan & RBAC', short: 'Pengaturan', icon: Settings },
 ];
 
@@ -98,6 +101,8 @@ const AppShell: React.FC = () => {
         return <AlarmNotificationModule />;
       case 'telemetry':
         return <TelemetryServerModule />;
+      case 'compliance':
+        return <ComplianceMatrixModule />;
       case 'settings':
         return <SettingsUsersModule />;
     }
@@ -121,6 +126,12 @@ const AppShell: React.FC = () => {
                 SIH3 BWS Sumatera V
               </div>
               <div className="text-[11px] text-[var(--text-secondary)]">Tata Air &amp; EWS Sumbar</div>
+            </div>
+          </div>
+          <div className="mt-2.5 rounded-lg border border-sky-500/30 bg-sky-500/10 px-2.5 py-1.5 text-[10.5px] leading-snug text-sky-300">
+            Demo untuk <strong>BWS Sumatera V</strong>
+            <div className="text-[10px] text-[var(--text-secondary)]">
+              oleh <strong className="text-[var(--text-primary)]">Fortuna Argatech</strong>
             </div>
           </div>
         </div>
@@ -233,13 +244,17 @@ const AppShell: React.FC = () => {
               <h1 className="text-sm font-bold text-[var(--text-primary)]">
                 {NAV_ITEMS.find((i) => i.id === activeModule)?.label}
               </h1>
-              <div className="flex items-center gap-2 text-[11px] text-[var(--text-secondary)]">
+              <div className="flex flex-wrap items-center gap-2 text-[11px] text-[var(--text-secondary)]">
                 <span className="inline-flex items-center gap-1 text-emerald-400 font-semibold">
                   <Radio className={`h-3 w-3 ${liveStreamActive ? 'animate-pulse' : ''}`} />
                   {liveStreamActive ? 'Telemetri Live' : 'Stream Dijeda'}
                 </span>
                 <span>•</span>
                 <span className="tabular-nums font-mono">{clockWib}</span>
+                <span className="hidden md:inline">•</span>
+                <span className="hidden md:inline rounded bg-sky-500/15 px-1.5 py-0.5 text-[10px] font-semibold text-sky-400">
+                  Demo BWS Sumatera V • Fortuna Argatech
+                </span>
                 {unreadNotifCount > 0 && (
                   <>
                     <span>•</span>
@@ -303,6 +318,17 @@ const AppShell: React.FC = () => {
 
         {/* Active Module Workspace */}
         <main className="flex-1 p-4 md:p-5">{renderModule()}</main>
+
+        {/* Footer Attribution */}
+        <footer className="no-print border-t border-[var(--border-subtle)] bg-[var(--surface-card)] px-4 py-2.5 text-[11px] text-[var(--text-secondary)] flex flex-wrap items-center justify-between gap-2">
+          <span>
+            Demo Platform Pemantauan Data SDA, Prakiraan Satelit &amp; EWS Banjir — Ditujukan untuk{' '}
+            <strong className="text-[var(--text-primary)]">Balai Wilayah Sungai (BWS) Sumatera V</strong>
+          </span>
+          <span>
+            Dikembangkan oleh <strong className="text-[var(--brand-accent)]">Fortuna Argatech</strong>
+          </span>
+        </footer>
       </div>
     </div>
   );

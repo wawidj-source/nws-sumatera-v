@@ -40,7 +40,7 @@ export const VideowallView: React.FC = () => {
               VIDEOWALL 4×2 PUSAT KENDALI — BWS SUMATERA V (SUMATERA BARAT)
             </h1>
             <p className="text-[11px] text-slate-400">
-              Tata Letak Ruang Operasi 8-Panel Simultan • Zona Waktu WIB (UTC+7)
+              Tata Letak Ruang Operasi 8-Panel Simultan • Demo untuk BWS Sumatera V oleh Fortuna Argatech • Zona Waktu WIB (UTC+7)
             </p>
           </div>
         </div>
